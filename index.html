@@ -1,30 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rediseño de la web de la ETSIT con Bootstrap</title>
-
-    <!-- Bootstrap -->
+    <html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Basic Bootstrap Template</title>
+   <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Carousel extra styles -->
     <link rel="stylesheet" href="css/carousel.css">
-  </head>
-  <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="micss.css">
+	</head>
+	<body>
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
-    </ul>
+	      <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">ETSIT URJC</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">En construcción</a></li>
+                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <Center><img src="images/aularioII-edificio.JPG" width="900" height="400" alt="First slide"></Center>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Aulario II</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <Center><img align=center src="images/deporte-estadio.JPG" border=0 width="900" height="400" alt="Second slide"></Center>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Estadio Raúl Gonzalez Blanco</h1>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <Center><img align=center src="images/labosII-edificio.JPG"border=0 width="900" height="400" alt="Third slide"></Center>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Laboratorio II</h1>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <!-- 2 columnas
+    ================================================== -->
+    
+
+    <div class="container marketing">
+
+      <!-- 2 columnas despues del carrusel -->
+      <div class="row">
+<div class="col-lg-4">
+          <ul class="tree">
+    <li><a href="#">URJC</a>
+        <ul>
+            <li>Grados
+                <ul>
+                    <li>Reports
+                        <ul>
+                            <li>Report1</li>
+                            <li>Report2</li>
+                            <li>Report3</li>
+                        </ul>
+                    </li>
+        </ul>
+    </li>
+    <li>Alumnos
+        <ul>
+            <li>Portal de Servicios</li>
+            <li>Examenes
+                <ul>
+                    <li>Reports
+                        <ul>
+                            <li>Report1</li>
+                            <li>Report2</li>
+                            <li>Report3</li>
+                        </ul>
+                    </li>
+                    <li>Employee Maint.</li>
+                </ul>
+            </li>
+  
+        </ul>
+    </li>
+</ul>
+      </div><!-- /.row -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/logoURJC.jpg" style="width: 200px; height: 90px;">
+          <h2>URJC</h2>
+          <p>La Universidad Rey Juan Carlos (URJC) es una de las seis universidades públicas de la Comunidad de Madrid. Su nombre es homenaje al Rey Juan Carlos I y fue creada por Ley 7/1996, de 8 de julio de 1996, con el lema latino Non nova, sed nove ("No cosas nuevas, sino de una manera nueva"). Su eslogan es Pública y preparada para ti. Según los datos estadísticos oficiales del censo de la propia institución realizados en 2013, la URJC es la tercera universidad pública de la región en número de alumnos, con 35 877 estudiantes.</p>
+          <p><a class="btn btn-default" href="http://www.urjc.es" role="button">Go to URJC &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/imagenCabecera.jpg">
+
+          <h2>ETSIT URJC</h2>
+          <p>Escuela Técnica Superior de Ingenieros de Telecomunicación de la Universidad Rey Juan Carlos.</p>
+          <p><a class="btn btn-default" href="http://www.etsit.urjc.es/" role="button">Go to ETSIT URJC &raquo;</a></p>
+        </div><!-- /.col-lg-8 -->
+        
+<hr align="left" noshade="noshade" size="4" width="90%" style="color: #0056b2;"/>
+<h1>Noticias</h1>
+  <h6>17/02/2015</h6>
+</div>
+<div class="panel panel-primary">
+ <div class="panel-heading">Ejemplo de Componente Bootstrap</div>
+  <div class="panel-body">
+    Aqui incluimos la información.
+  </div>
+</div>
+<div class="panel panel-success">
+ <div class="panel-heading"> Otra seccion</div>
+  <div class="panel-body">
+    Con otra información.
+  </div>
+</div>
+
+      <!-- JS -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
-  </body>
-</html>
+    <script src="mijs.js"></script>
+	</body>
+    </html>
